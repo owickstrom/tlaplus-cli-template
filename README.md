@@ -15,14 +15,14 @@ name. In this template the example specification is
 [spec/simple.tla](spec/simple.tla).
 * _Models_ are stored in the `model` directory. The model names must begin with
 the names of the specification _base names_, e.g. `simple` in this example
-project. The suffix is the model-specific name, e.g. `test1` or `test2`, and
-finally the file extension `.cfg`.
+project. The optional middle segment is the model-specific name, e.g. `test1`
+or `test2`. Finally there's the file extension `.cfg`.
 
 The general naming scheme can be described in EBNF of as:
 
 ```ebnf
 specification file name = module name, ".tla"
-model file name = module name, ".", model name, ".cfg"
+model file name = module name, [".", model name], ".cfg"
 ```
 
 This naming scheme thus supports writing and checking multiple models for each
