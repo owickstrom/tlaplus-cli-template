@@ -22,7 +22,6 @@ The general naming scheme can be described in EBNF of as:
 
 ```ebnf
 specification file name = module name, ".tla"
-
 model file name = module name, ".", model name, ".cfg"
 ```
 
