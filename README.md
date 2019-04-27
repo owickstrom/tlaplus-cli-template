@@ -7,6 +7,12 @@ rather than the TLA+ Toolbox, this might be a useful starting point!
 The project translates PlusCal and runs TLC using Make. Feel free to modify
 the Makefile to suit your needs. I've tried making it flexible enough, though.
 
+## Prerequitites
+
+To use this example project you need the following installed:
+
+* [tla-bin](https://github.com/pmer/tla-bin)
+
 ## File Structure
 
 * _Specifications_ are stores in the `spec` directory. They can be named
