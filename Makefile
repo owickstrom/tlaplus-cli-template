@@ -23,7 +23,7 @@ $(OUT):
 
 $(OUT)/%.tla: spec/%.tla $(OUT)
 	cp $< $@
-	pcal $@
+	pcal -nocfg $@
 
 $(OUT)/%.cfg: model/%.cfg $(OUT)
 	cp $< $@
