@@ -34,6 +34,16 @@ model file name = module name, [".", model name], ".cfg"
 This naming scheme thus supports writing and checking multiple models for each
 specification.
 
+## Linting with SANY
+
+To check for syntax and semantic errors using SANY, run:
+
+To check all models, run:
+
+```sh
+make lint
+```
+
 ## Model Checking
 
 To check all models, run:

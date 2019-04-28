@@ -32,6 +32,12 @@ $(OUT)/%.cfg: model/%.cfg $(OUT)
 
 .SECONDARY: $(TLA_TARGETS) $(MODEL_CFG_TARGETS)
 
+# Syntax checking using SANY
+
+.PHONY: lint
+lint: $(TLA_TARGETS)
+	sany $(TLA_TARGETS)
+
 # Check using TLC
 
 check-%: $(OUT)/%.cfg $(TLA_TARGETS)
