@@ -15,7 +15,7 @@ To use this example project you need the following installed:
 
 ## File Structure
 
-* _Specifications_ are stores in the `spec` directory. They can be named
+* _Specifications_ are stored in the `spec` directory. They can be named
 whatever you like, but as usual with TLA+, the module name must match the file
 name. In this template the example specification is
 [spec/simple.tla](spec/simple.tla).
@@ -58,6 +58,9 @@ If you want to model check a specification named `foo`, with a model named
 
 ```sh
 make check-foo.bar
+
+# for example with this project template you can run
+make check-simple.test1
 ```
 
 ## License
